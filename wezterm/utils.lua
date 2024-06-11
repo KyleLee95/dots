@@ -7,6 +7,7 @@ function utils.compile_and_run_file(file_type, file_name)
 		ts = "ts-node",
 		hs = "/Users/kyle/.ghcup/bin/stack build; /Users/kyle/.ghcup/bin/stack test",
 		lua = "/opt/homebrew/bin/lua",
+		kt = "/opt/homebrew/bin/kotlinc",
 	}
 	return run_command_table[file_type] .. " " .. file_name
 end
@@ -18,6 +19,7 @@ function utils.compile_and_run_tests(file_type, file_name)
 		ts = "ts-node",
 		hs = "/Users/kyle/.ghcup/bin/stack build; /Users/kyle/.ghcup/bin/stack test",
 		lua = "/opt/homebrew/bin/lua",
+		kt = "/opt/homebrew/bin/kotlinc",
 	}
 	--haskell is special and stack doesn't need the file name since it runs thwhole test suite.
 	-- probably have to add this for more things later like pytest, etc.
