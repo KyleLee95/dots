@@ -13,15 +13,16 @@ error_symbol = '[➜](bold red)'
 
 [directory]
 truncation_length = 3
-style = "bold blue"
 read_only = " "
 home_symbol = "󰋜 "
+style = "bright-white"
 
 [git_branch]
 symbol = " "
 truncation_length = 4
 truncation_symbol = "…"
 always_show_remote = true
+style = "green"
 
 [git_status]
 conflicted = ' 🏳 |'
@@ -35,3 +36,4 @@ modified = ' 📝: ${count} |'
 staged = ' [++\($count\)](green) |'
 renamed = ' 👅 |'
 deleted = ' 🗑 |'
+style = "yellow"
