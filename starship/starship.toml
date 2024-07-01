@@ -24,6 +24,7 @@ truncation_symbol = "…"
 always_show_remote = true
 
 [git_status]
-modified = ""
-up_to_date = ""
+modified = "󰬅"
+up_to_date = "󰸞"
+untracked = ""
 staged = "✚"
