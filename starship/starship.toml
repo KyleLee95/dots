@@ -1,0 +1,29 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+
+
+
+format = """$character$directory$git_branch$git_status"""
+add_newline = false
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red)'
+
+[directory]
+truncation_length = 3
+style = "bold blue"
+read_only = " "
+home_symbol = "󰋜 "
+
+[git_branch]
+symbol = " "
+truncation_length = 4
+truncation_symbol = "…"
+always_show_remote = true
+
+[git_status]
+modified = ""
+up_to_date = ""
+staged = "✚"
