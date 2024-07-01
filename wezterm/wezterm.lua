@@ -43,6 +43,10 @@ if host_os == "macos" then
 	config.set_environment_variables = {
 		PATH = PATH_ENV_VARS,
 	}
+elseif host_os == "linux" then
+	config.set_environment_variables = {
+		PATH = bin_PATH,
+	}
 end
 -- wezterm.log_info(config)
 -- wezterm.log_error("Config Dir " .. wezterm.config_dir)
